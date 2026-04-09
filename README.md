@@ -1,6 +1,6 @@
 # AI Blog Writer Agent
 
-An autonomous, multi-agent content generation platform that leverages LangGraph and Generative AI to produce structured, professional technical articles. This project demonstrates a sophisticated "Plan-and-Execute" workflow, complete with automated research, multi-section drafting, and AI-driven technical illustration.
+- An autonomous, multi-agent content generation platform that leverages LangGraph and Generative AI to produce structured, professional technical articles. This project demonstrates a sophisticated "Plan-and-Execute" workflow, complete with automated research, multi-section drafting, and AI-driven technical illustration.
 
 ---
 
@@ -30,25 +30,25 @@ An autonomous, multi-agent content generation platform that leverages LangGraph 
 
 This project utilizes a Map-Reduce architectural pattern managed by LangGraph to ensure logical flow and high-quality output:
 
-1. The Orchestrator (Planning)
-Purpose: Strategic breakdown of the topic.
+## 1. The Orchestrator (Planning)
+- Purpose: Strategic breakdown of the topic.
 
-How it works: The LLM acts as a Senior Technical Writer, generating a comprehensive Plan. It defines the target audience, tone, and a structured outline with specific goals and word counts for each section.
+- How it works: The LLM acts as a Senior Technical Writer, generating a comprehensive Plan. It defines the target audience, tone, and a structured outline with specific goals and word counts for each section.
 
-2. The Worker Hive (Parallel Drafting)
-Purpose: High-speed content generation.
+## 2. The Worker Hive (Parallel Drafting)
+- Purpose: High-speed content generation.
 
-How it works: Utilizing the Fan-out pattern, the agent triggers multiple parallel workers. Each worker focuses on a single section of the plan, ensuring deep technical coverage and adherence to the specific section goals.
+- How it works: Utilizing the Fan-out pattern, the agent triggers multiple parallel workers. Each worker focuses on a single section of the plan, ensuring deep technical coverage and adherence to the specific section goals.
 
-3. The Reducer (Merging & Refinement)
-Purpose: Contextual assembly.
+## 3. The Reducer (Merging & Refinement)
+- Purpose: Contextual assembly.
 
-How it works: The Fan-in process merges individual sections into a cohesive Markdown document. It ensures transitions are smooth and the narrative flow is professional.
+- How it works: The Fan-in process merges individual sections into a cohesive Markdown document. It ensures transitions are smooth and the narrative flow is professional.
 
-4. Technical Illustrator (Visual Intelligence)
-Purpose: Enhancing readability with visuals.
+## 4. Technical Illustrator (Visual Intelligence)
+- Purpose: Enhancing readability with visuals.
 
-How it works: A specialized node analyzes the final text to decide where diagrams would add the most value. It generates detailed prompts and calls Image Generation APIs (Freepik/FLUX) to create and embed images dynamically.
+- How it works: A specialized node analyzes the final text to decide where diagrams would add the most value. It generates detailed prompts and calls Image Generation APIs (Freepik/FLUX) to create and embed images dynamically.
 
 ---
 
@@ -80,8 +80,8 @@ How it works: A specialized node analyzes the final text to decide where diagram
 
 # 🎓 Acknowledgments & Disclaimer
 
-Educational Purpose: This project was developed as an initiative to explore stateful AI agents and autonomous content pipelines.
+- Educational Purpose: This project was developed as an initiative to explore stateful AI agents and autonomous content pipelines.
 
-Expertise: Built to showcase the intersection of Software Engineering and AI Edge deployment.
+- Expertise: Built to showcase the intersection of Software Engineering and AI Edge deployment.
 
-Hardware Mindset: Designed with resource-aware logic and structured data flows, reflecting a background in Electrical Engineering and Hardware Design.
+- Hardware Mindset: Designed with resource-aware logic and structured data flows, reflecting a background in Electrical Engineering and Hardware Design.
